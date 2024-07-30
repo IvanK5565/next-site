@@ -1,11 +1,11 @@
-const Header = () => {
+import Link from "next/link"
+
+export default function Header() {
     return (
         <header className="container">
             <aside className="mainCol">
-            <a href="/" className="logo">MySocial</a>
+            <Link href="/" className="logo">MySocial</Link>
             </aside>
         </header>
     )
 }
-
-export default Header

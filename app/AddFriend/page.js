@@ -1,10 +1,14 @@
-import Main from "@/app/components/AddFriend/Main";
+import LeftPanel from "@/app/components/LeftPanel";
+import CentralPanel from "@/app/components/AddFriend/CentralPanel";
+import RightPanel from "@/app/components/RightPanel";
 import "./addFriend.css";
 
 export default function NewFriend() {
   return (
-    <>
-      <Main />
-    </>
+    <main className="container">
+      <LeftPanel />
+      <CentralPanel />
+      <RightPanel />
+    </main>
   );
 }

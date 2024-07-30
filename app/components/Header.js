@@ -1,8 +1,10 @@
-const Header = () => {
+import Link from "next/link"
+
+export default function Header() {
     return (
         <header className="container">
             <aside>
-                <a href="/" className="logo">MySocial</a>
+                <Link href="/" className="logo">MySocial</Link>
             </aside>
             <form action="search.html" className="search mainCol">
                 <input type="text" placeholder="Search" />
@@ -11,12 +13,10 @@ const Header = () => {
                 </button>
             </form>
             <nav className="navigate aside">
-                <a href="profile"><img width="26" height="26" src="images/avatar.png" alt="avatar" /></a>
-                <a href="messages"><img width="26" height="26" src="images/messages.png" alt="messages" /></a>
-                <a href="AddFriend"><img width="26" height="26" src="images/friends.png" alt="friends" /></a>
+                <Link href="Profile"><img width="26" height="26" src="images/avatar.png" alt="avatar" /></Link>
+                <Link href="Messages"><img width="26" height="26" src="images/messages.png" alt="messages" /></Link>
+                <Link href="AddFriend"><img width="26" height="26" src="images/friends.png" alt="friends" /></Link>
             </nav>
         </header>
     )
 }
-
-export default Header
